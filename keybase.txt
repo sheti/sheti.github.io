@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/sheti
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://sheti.github.io
+  * I am sheti (https://keybase.io/sheti) on keybase.
+  * I have a public key ASDJ4g4HocLmOTDB6peaUJq2U0-qgl5oFAxgFRa0SFzqcQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c9e20e07a1c2e63930c1ea979a509ab6534faa825e68140c601516b4485cea710a",
+      "host": "keybase.io",
+      "kid": "0120c9e20e07a1c2e63930c1ea979a509ab6534faa825e68140c601516b4485cea710a",
+      "uid": "d660c5dc3406701d1ab916b7c716f919",
+      "username": "sheti"
+    },
+    "merkle_root": {
+      "ctime": 1570786465,
+      "hash": "3fb46ac2eb72307fe38c60a03517664a0d897e2ab03e2a45d4759cc510f803e4076a5e5a739c80a08445c47356db36b6ac10907e2f46963a5fdbf971c956097d",
+      "hash_meta": "7c9c001b0daa8492c337218526ce1de1430812fd6b3bfb5d1ae361d753def857",
+      "seqno": 7996753
+    },
+    "service": {
+      "entropy": "jEwKftK9Db2kBykHwU8TOFfZ",
+      "hostname": "sheti.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.6.0"
+  },
+  "ctime": 1570786483,
+  "expire_in": 504576000,
+  "prev": "376a121b9070a539ae138d2ee366f1726c747894e28aa1734a6d1c403d4cc49f",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgyeIOB6HC5jkwweqXmlCatlNPqoJeaBQMYBUWtEhc6nEKp3BheWxvYWTESpcCB8QgN2oSG5BwpTmuE40u42bxcmx0eJTiiqFzSm0cQD1MxJ/EIEz9YNpqEo/4DSiVCmmdczw8KOOlhzmzd3R8C8NN20spAgHCo3NpZ8RAOFCINqm6JSA0Qjega5GS0NfrKCuP9rvdOs+hNhVlErHctl9LgRKK3aP3+7vvY4DOMdqWw9s5ZxoGPu+V/1IvDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKtAE+SqHfqS8HHnZZ5NVoI7tidI/9zSEudWU8vyj4vuo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sheti
+
+==================================================================
