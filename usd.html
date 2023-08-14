@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js h-100" lang="ru-RU">
+
+<head>
+  <meta charset="utf-8">
+  <title>Успокоительный курс $</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="d-flex h-100 text-center text-bg-dark">
+	<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<header class="mb-auto"></header>
+		<main class="px-3">
+			<h1>Успокоительный курс $</h1>
+			<p class="lead" id="curs">Текущий курс</p>
+			<p class="lead"><a href="http://www.cbr.ru/" class="btn btn-lg btn-light fw-bold border-white bg-white">ЦБ РФ</a></p>
+		</main>
+		<footer class="mt-auto text-white-50">
+			<p>by <a href="https://sheti.github.io/" class="text-white">Şeti Aşcroft</a>.</p>
+		</footer>
+	</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	<script>
+	var getJSON = function(url, callback) {
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', url, true);
+		xhr.responseType = 'json';
+		xhr.onload = function() {
+		  var status = xhr.status;
+		  if (status === 200) {
+			callback(null, xhr.response);
+		  } else {
+			callback(status, xhr.response);
+		  }
+		};
+		xhr.send();
+	};
+	getJSON('https://www.cbr-xml-daily.ru/daily_json.js',
+		function(err, data) {
+		  if (err !== null) {
+			console.error('getJSON Error: ' + err);
+		  } else {
+			console.info('1$ = ' + data.Valute.USD.Value);
+			var USDrate = 30.0 / data.Valute.USD.Value * 100;
+		    var USD = document.getElementById('curs');
+		    USD.innerHTML = '30 RUB - ' + Math.round(USDrate, 0) + '¢';
+		  }
+		});
+	</script>
+</body>
+
+</html>
